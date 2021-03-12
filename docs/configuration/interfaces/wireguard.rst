@@ -108,10 +108,10 @@ the public key, which needs to be shared with the peer.
 
   set interfaces wireguard wg01 address '10.2.0.1/24'
   set interfaces wireguard wg01 description 'VPN-to-wg01'
-  set interfaces wireguard wg01 peer to-wg02 allowed-ips '10.1.0.0/24'
-  set interfaces wireguard wg01 peer to-wg02 address '192.168.0.124'
-  set interfaces wireguard wg01 peer to-wg02 port '12345'
-  set interfaces wireguard wg01 peer to-wg02 pubkey 'u41jO3OF73Gq1WARMMFG7tOfk7+r8o8AzPxJ1FZRhzk='
+  set interfaces wireguard wg01 peer to-wg01 allowed-ips '10.1.0.0/24'
+  set interfaces wireguard wg01 peer to-wg01 address '192.168.0.124'
+  set interfaces wireguard wg01 peer to-wg01 port '12345'
+  set interfaces wireguard wg01 peer to-wg01 pubkey 'u41jO3OF73Gq1WARMMFG7tOfk7+r8o8AzPxJ1FZRhzk='
   set interfaces wireguard wg01 port '12345'
   set protocols static route 10.1.0.0/24 interface wg01
 
@@ -259,7 +259,7 @@ Operational commands
 
 .. code-block:: none
 
-  vyos@wg01# wireguard keypair default
+  vyos@wg01# delete wireguard keypair default
 
 
 .. stop_vyoslinter
