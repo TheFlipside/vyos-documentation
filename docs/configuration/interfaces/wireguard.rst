@@ -86,7 +86,7 @@ defined and routed, the last check is allowed-ips which either prevents
 or allows the traffic.
 
 .. note:: You can not assign the same allowed-ips statement to multiple
-   WireGuard peers. This a a design decission. For more information please
+   WireGuard peers. This is a design decision. For more information please
    check the `WireGuard mailing list`_.
 
 
